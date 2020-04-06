@@ -1,5 +1,5 @@
 # Draw!
-An application that let you draw with different colors and stroke sizes using [p5.js](https://p5js.org).
+An application that lets you draw with different colors and stroke sizes using [p5.js](https://p5js.org).
 > **Adrián Lorenzo Melián** - *Creando Interfaces de Usuario*, [**ULPGC**](https://www.ulpgc.es).
 > adrian.lorenzo101@alu.ulpgc.es
 
@@ -15,7 +15,7 @@ An application that let you draw with different colors and stroke sizes using [p
 * [Requisitos](#requirements)
 * [Instrucciones](#instructions)
 * [Implementación](#implementation)
-    * [Creación de trazos](#song)
+    * [Creación de trazos](#strokes)
 * [Herramientas y recursos utilizados](#tools-and-resources)
 * [Referencias](#references)
 
@@ -53,7 +53,6 @@ function mouseDragged(){
     )
 }
 ```
-
 
 ## Herramientas y recursos utilizados <a id="tools-and-resources"></a>
 - [Feather icons](https://feathericons.com) - Conjunto de iconos de los que se obtuvo el icono de la papelera para el botón de borrar el contenido del lienzo.
