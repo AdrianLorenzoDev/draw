@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+canvas {
+    display: block;
+}
+
+#menu {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+button {
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    
+}
+
+.menuOption {
+    margin: 15px 40px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#strokeOption {
+    margin-left: 30px;
+}
+
+.strokeElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#strokeElement {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#strokeValue {
+    text-align: center;
+}
+
+.menuTitle {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#eraseElement {
+    border-radius: 10px;
+    padding: 4px;
+    background-color: red;
+}
+
+#eraseOption {
+    margin-left: auto;
+    align-self: center;
+}

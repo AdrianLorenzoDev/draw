@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Draw!</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <script src="models/color.js"></script>
+  <script src="models/point.js"></script>
+  <script src="models/canvas.js"></script>
+  <script src="models/element.js"></script>
+  <script src="sketch.js"></script>
+
+  <!-- Menu -->
+  <div id="menu">
+    <div id="strokeOption" class="menuOption">
+      <div class="strokeElement">
+        <div class="menuTitle">Stroke</div>
+        <div class="slider">
+          <div>1</div>
+          <input id="strokeElement" type="range" min="1" max="100" value="10" onchange="strokeChanged(this.value);">
+          <div>100</div>
+        </div>
+        <div id="strokeValue"></div>
+      </div>
+    </div>
+    <div id="colorOption" class="menuOption">
+      <div class="menuTitle">Color</div>
+      <div id="colorElement" title="Choose color" class="boxWithShadow"></div>
+    </div>
+    <div id="eraseOption" class="menuOption">
+      <button id="eraseElement" title="Remove draw" onclick="removeDraw();"><i data-feather="trash-2"></i></button>
+    </div>
+  </div>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>
