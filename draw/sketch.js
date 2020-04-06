@@ -1,7 +1,6 @@
 const canvas = new Canvas()
 var colorPicker
 var strokeSize
-var isDrawing = false
 
 
 window.onload = function () {
